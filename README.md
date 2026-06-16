@@ -94,7 +94,7 @@ ABIs for **every** contract above — including the source-closed engine — are
 | Staking | [`0xeb9cC382631cFFd597caD6494aC80a631253752a`](https://hyperevmscan.io/address/0xeb9cC382631cFFd597caD6494aC80a631253752a) |
 | TreasuryV3 | [`0x3a648289259b9F12B3678E79E6Fa85e7Ab982002`](https://hyperevmscan.io/address/0x3a648289259b9F12B3678E79E6Fa85e7Ab982002) |
 | AffiliateRegistry | [`0xC4C1c75185C3F4B583F2da0BFf7A74ec474f12c9`](https://hyperevmscan.io/address/0xC4C1c75185C3F4B583F2da0BFf7A74ec474f12c9) |
-| LpTimelock | _at launch_ |
+| LpTimelock | [`0xaA67a41B1106Fe8F62BeD765B3FCb8e651180325`](https://hyperevmscan.io/address/0xaA67a41B1106Fe8F62BeD765B3FCb8e651180325) |
 | DrandSource | [`0x54f1d102a8F87F56645813F9C420C44f33258Bd0`](https://hyperevmscan.io/address/0x54f1d102a8F87F56645813F9C420C44f33258Bd0) |
 | DrandBeacon | [`0x48187B3Ccd6f2E873617357F218036D30C89442C`](https://hyperevmscan.io/address/0x48187B3Ccd6f2E873617357F218036D30C89442C) |
 | GridMining | [`0xa406a36648E0ca782dD2fFdEb4E2Ac9893A1a436`](https://hyperevmscan.io/address/0xa406a36648E0ca782dD2fFdEb4E2Ac9893A1a436) |
@@ -124,8 +124,9 @@ trusting us.
 - Hard cap 2,005,900 $MRCY (atomic weight 200.59 × 10⁴), enforced at mint, cap freezable.
 - Zero team allocation, no presale. The only pre-mine is 1% of cap, **LP-only**.
 - **Initial liquidity is locked 6 months** in `LpTimelock` (beneficiary = team
-  multisig); the lock can only be extended, never shortened. `unlockTime()` is
-  on-chain and explorer-readable from launch (~Dec 2026).
+  multisig); the lock can only be extended, never shortened. Locked position:
+  Hyperswap V3 NFT #178690, `unlockTime` **2026-12-16** — on-chain and
+  explorer-readable.
 - Fees: 1% admin on deploys · 10% vault on the losers' pool (funds buybacks) ·
   10% refining on $MRCY claims (redistributed to patient holders).
 - Randomness is trustless on outcome: the drand signature is unforgeable and

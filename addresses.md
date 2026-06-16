@@ -14,7 +14,7 @@
 | `Staking` | `0xeb9cC382631cFFd597caD6494aC80a631253752a` | [hyperevmscan](https://hyperevmscan.io/address/0xeb9cC382631cFFd597caD6494aC80a631253752a) |
 | `TreasuryV3` | `0x3a648289259b9F12B3678E79E6Fa85e7Ab982002` | [hyperevmscan](https://hyperevmscan.io/address/0x3a648289259b9F12B3678E79E6Fa85e7Ab982002) |
 | `AffiliateRegistry` | `0xC4C1c75185C3F4B583F2da0BFf7A74ec474f12c9` | [hyperevmscan](https://hyperevmscan.io/address/0xC4C1c75185C3F4B583F2da0BFf7A74ec474f12c9) |
-| `LpTimelock` | _published at launch_ | — |
+| `LpTimelock` | `0xaA67a41B1106Fe8F62BeD765B3FCb8e651180325` | [hyperevmscan](https://hyperevmscan.io/address/0xaA67a41B1106Fe8F62BeD765B3FCb8e651180325) |
 | `DrandSource` | `0x54f1d102a8F87F56645813F9C420C44f33258Bd0` | [hyperevmscan](https://hyperevmscan.io/address/0x54f1d102a8F87F56645813F9C420C44f33258Bd0) |
 | `DrandBeacon` | `0x48187B3Ccd6f2E873617357F218036D30C89442C` | [hyperevmscan](https://hyperevmscan.io/address/0x48187B3Ccd6f2E873617357F218036D30C89442C) |
 | `GridMining` | `0xa406a36648E0ca782dD2fFdEb4E2Ac9893A1a436` | [hyperevmscan](https://hyperevmscan.io/address/0xa406a36648E0ca782dD2fFdEb4E2Ac9893A1a436) |
@@ -22,9 +22,13 @@
 
 ## Liquidity lock
 
-The initial-liquidity LP position is held by `LpTimelock` for **6 months** from
-launch (beneficiary = the team multisig). The lock can only be extended, never
-shortened; `unlockTime()` is readable on-chain and on the explorer.
+The initial-liquidity LP position — Hyperswap V3 NFT **#178690** (MRCY/WHYPE,
+full range) — is held by `LpTimelock` until **2026-12-16** (`unlockTime` =
+`1797447017`), the team multisig as beneficiary. The lock can only be extended,
+never shortened, and there is no `decreaseLiquidity` path: nobody, not even the
+multisig, can pull the liquidity before unlock — only collect swap fees or
+extend. `unlockTime()` and `ownerOf(178690) == LpTimelock` are readable on-chain
+and on the explorer.
 
 ## Ownership
 
