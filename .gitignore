@@ -1,0 +1,15 @@
+# foundry artifacts
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+contracts/lib/
+
+# env / secrets — never committed
+.env
+.env.*
+*.key
+
+# editor noise
+.vscode/
+.idea/
+.DS_Store
